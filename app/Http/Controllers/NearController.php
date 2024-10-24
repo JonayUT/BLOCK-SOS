@@ -31,10 +31,10 @@ class NearController extends Controller
             ]);
 
             // Obtener la respuesta en formato JSON
-            $responseData = json_decode($response->getBody(), true);
+            $walletData = json_decode($response->getBody()->getContents(), true)['result'];
 
-            // Retornar la respuesta como JSON
-            return response()->json($responseData);
+            // Pasar los datos a la vista 'wallet'
+            return view('wallet', compact('walletData'));
 
         } catch (\Exception $e) {
             // Manejar errores

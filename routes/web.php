@@ -13,6 +13,7 @@
 */
 
 use App\Http\Controllers\VistasController;
+use App\Http\Controllers\NearController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [VistasController::class, 'login'])->name('login');
@@ -25,4 +26,4 @@ Route::get('/donacionesuser', [VistasController::class, 'donacionesuser'])->name
 Route::get('/index', [VistasController::class, 'index'])->name('home');
 Route::get('/register', [VistasController::class, 'register'])->name('register');
 
-
+Route::get('/wallet/{accountId}', [NearController::class, 'getWalletData'])->name('wallet');
