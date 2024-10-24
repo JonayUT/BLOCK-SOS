@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.header img {
+    height: 40px;
+}
+
+.header nav a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background: url('https://placehold.co/1200x300') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.donation-category {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.donation-category img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.donation-category .details {
+    flex: 1;
+}
+
+.donation-category .details h3 {
+    margin: 0 0 10px;
+}
+
+.donation-category .details p {
+    margin: 0 0 10px;
+    color: #666;
+}
+
+.donation-category .details .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.donation-category .details .btn:hover {
+    background-color: #0056b3;
+}
+
+.donation-category .amount {
+    text-align: right;
+}
+
+.donation-category .amount p {
+    margin: 0;
+}
+
+.donation-category .amount .btn {
+    background-color: #28a745;
+}
+
+.donation-category .amount .btn:hover {
+    background-color: #218
+}
