@@ -12,13 +12,12 @@
     <header>
     <img alt="Block SOS Logo" src="https://storage.googleapis.com/a1aa/image/Y4TXGagmZJK8PBuBpMvfccBnO0I62MeIuby42A0upid9E2pTA.jpg" height=25px />
     <nav>
-        
         <a href="{{ route('perfilusuarios') }}">Perfil</a>
         <a href="{{ route('home') }}">Inicio</a>
         <a href="{{ route('listacategorias') }}">Categorias</a>
         <a href="{{ route('donacionesuser') }}">Mis Donaciones</a>
-        <a href="{{ route('login') }}">Salir</a>
-
+        <a class="btn" href="{{ route('login') }}">Salir</a>
+        
     </nav>
     
     </header>

@@ -8,8 +8,12 @@
     <div class="wallet-info">
         <table>
             <tr>
-                <th>Cantidad</th>
+                <th>Cantidad (NEAR)</th>
                 <td>{{ $walletData['amount'] }}</td>
+            </tr>
+            <tr>
+                <th>Valor en USD</th>
+                <td>${{ number_format($amountInUsd, 2) }}</td> <!-- Formatear a 2 decimales -->
             </tr>
             <tr>
                 <th>Hash del Bloque</th>

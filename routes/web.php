@@ -15,7 +15,11 @@
 use App\Http\Controllers\VistasController;
 use App\Http\Controllers\NearController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
+
+//////////////////////////////////////////////////////////////////////////////////
+//Vistas normales
 Route::get('/', [VistasController::class, 'login'])->name('login');
 Route::get('/categorias', [VistasController::class, 'listacategorias'])->name('listacategorias');
 Route::get('/perfilusuarios', [VistasController::class, 'perfilusuarios'])->name('perfilusuarios');
@@ -26,4 +30,11 @@ Route::get('/donacionesuser', [VistasController::class, 'donacionesuser'])->name
 Route::get('/index', [VistasController::class, 'index'])->name('home');
 Route::get('/register', [VistasController::class, 'register'])->name('register');
 
-Route::get('/wallet/{accountId}', [NearController::class, 'getWalletData'])->name('wallet');
+///////////////////////////////////////////////////////////////////////////////////////////////////
+//Chain Wallet CCr
+Route::get('/wallet/{accountId}', [NearController::class, 'getWalletData'])->name('wallet.data');
+Route::get('/donations/{username}', [NearController::class, 'showDonations'])->name('donations');
+Route::post('/donate', [NearController::class, 'donate']);
+Route::get('/donations', [NearController::class, 'showDonations'])->name('donations');
+
+
